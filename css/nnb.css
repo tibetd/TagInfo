@@ -1,0 +1,17 @@
+﻿.w3-example {
+	width: 48%;
+	height: 478px;
+	vertical-align: top;
+	display: inline-block;
+	margin: 5px;
+}
+#accordion-resizer {
+	padding: 10px;
+	width: 48%;
+	height: 478px;
+	display: inline-block;
+	margin: 5px;
+}
+.ui-accordion .ui-accordion-header {
+	font-size: 85% !important;
+}

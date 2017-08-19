@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The &lt;track&gt; tag specifies text tracks for media elements (&lt;audio&gt; 
+			and &lt;video&gt;).</p>
+			<p>This element is used to specify subtitles, caption files or other 
+			files containing text, that should be visible when the media is playing.</p>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<p>The numbers in the table specify the first browser version that fully 
+			supports the element.</p>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;track&gt;</td>
+					<td>18.0</td>
+					<td>12.0</td>
+					<td>10.0</td>
+					<td>31.0</td>
+					<td>6.0</td>
+					<td>15.0</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>The &lt;track&gt; tag is new in HTML5.</p>
+		</div>
+		<h3>Optional Attributes</h3>
+		<div>
+			<p class="html5badge" style="background-position: left; padding-left: 20px; height: 18px;">
+			= New in HTML5.</p>
+			<table class="w3-table-all notranslate">
+				<tr>
+					<th style="width: 20%">Attribute</th>
+					<th style="width: 20%">Value</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_track_default.asp">default</a></td>
+					<td>default</td>
+					<td>Specifies that the track is to be enabled if the user's 
+					preferences do not indicate that another track would be more 
+					appropriate</td>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_track_kind.asp">kind</a></td>
+					<td>captions <br/>chapters <br/>descriptions <br/>metadata <br/>subtitles</td>
+					<td>Specifies the kind of text track</td>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_track_label.asp">label</a></td>
+					<td><em>text</em></td>
+					<td>Specifies the title of the text track</td>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_track_src.asp">src</a></td>
+					<td><em>URL</em></td>
+					<td>Required. Specifies the URL of the track file</td>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_track_srclang.asp">srclang</a></td>
+					<td><i>language_code</i></td>
+					<td>Specifies the language of the track text data (required 
+					if kind="subtitles")</td>
+				</tr>
+			</table>		<h3>Global Attributes</h3>
+		<div>
+			<p>The &lt;track&gt; tag also supports the
+			<a href="ref_standardattributes.asp">Global Attributes in HTML</a>.</p>
+		</div>
+		<h3>Event Attributes</h3>
+		<div>
+			<p>The &lt;track&gt; tag also supports the
+			<a href="ref_eventattributes.asp">Event Attributes in HTML</a>.</p>
+		</div>
+
+		</div>
+		<h3>Related Pages</h3>
+		<div>
+			<p>HTML tutorial: <a href="/html/html5_video.asp">HTML5 Video</a></p>
+			<p>HTML tutorial: <a href="/html/html5_audio.asp">HTML5 Audio</a></p>
+			<p>HTML DOM reference: <a href="/jsref/dom_obj_track.asp">Track Object</a></p>
+		</div>
+		<h3>Default CSS Settings</h3>
+		<div>
+			<p>None.</p>
+		</div>
+	</div>
+</div>
+<!-- Example goes here -->
+<div class="w3-example" style="float:right">
+	<h3>Example</h3>
+	<p>A video with two subtitle tracks:</p>
+	<div class="w3-code notranslate htmlHigh">
+		<span class="highLT">&lt;</span><span class="highELE">video</span>
+		<span class="highATT">width=</span><span class="highVAL">"320"</span>
+		<span class="highATT">height=</span><span class="highVAL">"240"</span>
+		<span class="highATT">controls</span><span class="highGT">&gt;</span> <br/>&nbsp;
+		<span class="highLT">&lt;</span><span class="highELE">source</span>
+		<span class="highATT">src=</span><span class="highVAL">"forrest_gump.mp4"</span>
+		<span class="highATT">type=</span><span class="highVAL">"video/mp4"</span><span class="highGT">&gt;</span> <br/>&nbsp;
+		<span class="highLT">&lt;</span><span class="highELE">source</span>
+		<span class="highATT">src=</span><span class="highVAL">"forrest_gump.ogg"</span>
+		<span class="highATT">type=</span><span class="highVAL">"video/ogg"</span><span class="highGT">&gt;</span> <br/>&nbsp;
+		<span class="highLT">&lt;</span><span class="highELE">track</span>
+		<span class="highATT">src=</span><span class="highVAL">"subtitles_en.vtt"</span>
+		<span class="highATT">kind=</span><span class="highVAL">"subtitles"</span>
+		<span class="highATT">srclang=</span><span class="highVAL">"en"</span>
+		<span class="highATT">label=</span><span class="highVAL">"English"</span><span class="highGT">&gt;</span> <br/>&nbsp;
+		<span class="highLT">&lt;</span><span class="highELE">track</span>
+		<span class="highATT">src=</span><span class="highVAL">"subtitles_no.vtt"</span>
+		<span class="highATT">kind=</span><span class="highVAL">"subtitles"</span>
+		<span class="highATT">srclang=</span><span class="highVAL">"no"</span>
+		<span class="highATT">label=</span><span class="highVAL">"Norwegian"</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">/video</span><span class="highGT">&gt;</span> <br/>
+	</div>
+</div>
+<!-- Result goes here -->
+
+</body>
+
+</html>

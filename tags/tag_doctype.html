@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The &lt;!DOCTYPE&gt; declaration must be the very first thing in 
+			your HTML document, before the &lt;html&gt; tag.</p>
+			<p>The &lt;!DOCTYPE&gt; declaration is not an HTML tag; it is an instruction 
+			to the web browser about what version of HTML the page is written in.</p>
+			<p>In HTML 4.01, the &lt;!DOCTYPE&gt; declaration refers to a DTD, because 
+			HTML 4.01 was based on SGML. The DTD specifies the rules for the markup 
+			language, so that the browsers render the content correctly.</p>
+			<p>HTML5 is not based on SGML, and therefore does not require a reference 
+			to a DTD.</p>
+			<p><b>Tip:</b> Always add the &lt;!DOCTYPE&gt; declaration to your HTML 
+			documents, so that the browser knows what type of document to expect.</p>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;!DOCTYPE&gt;</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>There are three different &lt;!DOCTYPE&gt; declarations in HTML 4.01. 
+			In HTML5 there is only one:</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE html&gt; </div>
+			</div>
+		</div>
+		<h3>HTML Elements and Doctypes</h3>
+		<div>
+			<p>Look at our table of all <a href="ref_html_dtd.asp">HTML elements, 
+			and what Doctype each element appears in</a>.</p>
+		</div>
+		<h3>Tips and Notes</h3>
+		<div>
+			<p><b>Tip:</b> The &lt;!DOCTYPE&gt; declaration is NOT case sensitive.</p>
+			<p><b>Tip:</b> You can <a href="/website/web_validate.asp">go here to 
+			validate</a> if your document is valid HTML.</p>
+		</div>
+		<h3>Common DOCTYPE Declarations</h3>
+		<div>
+			<h3>HTML 5</h3>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE html&gt; </div>
+			</div>
+			<h3>HTML 4.01 Strict</h3>
+			<p>This DTD contains all HTML elements and attributes, but does NOT 
+			INCLUDE presentational or deprecated elements (like font). Framesets 
+			are not allowed.</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+				</div>
+			</div>
+			<h3>HTML 4.01 Transitional</h3>
+			<p>This DTD contains all HTML elements and attributes, INCLUDING presentational 
+			and deprecated elements (like font). Framesets are not allowed.</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+				</div>
+			</div>
+			<h3>HTML 4.01 Frameset</h3>
+			<p>This DTD is equal to HTML 4.01 Transitional, but allows the use of 
+			frameset content.</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;
+				</div>
+			</div>
+			<h3>XHTML 1.0 Strict</h3>
+			<p>This DTD contains all HTML elements and attributes, but does NOT 
+			INCLUDE presentational or deprecated elements (like font). Framesets 
+			are not allowed. The markup must also be written as well-formed XML.</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+				</div>
+			</div>
+			<h3>XHTML 1.0 Transitional</h3>
+			<p>This DTD contains all HTML elements and attributes, INCLUDING presentational 
+			and deprecated elements (like font). Framesets are not allowed. The 
+			markup must also be written as well-formed XML.</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+				</div>
+			</div>
+			<h3>XHTML 1.0 Frameset</h3>
+			<p>This DTD is equal to XHTML 1.0 Transitional, but allows the use of 
+			frameset content.</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+				</div>
+			</div>
+			<h3>XHTML 1.1</h3>
+			<p>This DTD is equal to XHTML 1.0 Strict, but allows you to add modules 
+			(for example to provide ruby support for East-Asian languages).</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Example goes here -->
+<div class="w3-example" style="float:right">
+	<h3>Example</h3>
+	<div class="w3-code notranslate htmlHigh">
+		<span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span>
+		<span class="highATT">html</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">html</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">title</span><span class="highGT">&gt;</span>Title 
+		of the document<span class="highLT">&lt;</span><span class="highELE">/title</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span> <br/>
+		 <br/><span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span> <br/>
+		The content of the document...... <br/><span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span> <br/>
+		 <br/><span class="highLT">&lt;</span><span class="highELE">/html</span><span class="highGT">&gt;</span>
+	</div>
+	<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_doctype" target="_blank">
+	Try it yourself »</a> </div>
+<!-- Result goes here -->
+
+</body>
+
+</html>

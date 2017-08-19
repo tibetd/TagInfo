@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<script type="text/javascript">
+function createMatrix()
+{
+var s="";
+for (var r=1;r<=s1.value;r++)
+{
+s= s + "<tr>";
+for (var c=1;c<=s2.value;c++)
+	{
+		s = s + "<td><input id=\"" + r + c + "\" value=\""+r+c+"\"></input></td>";
+	};
+s=s + "</tr>";
+};
+t1.innerHTML=s;
+}
+</script>
+
+</head>
+
+<body>
+<table id="t1" class="auto-style1" style="border-width: thin; border-style: hidden">
+</table>
+<select id="s1" onchange="createMatrix()">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select> <select id="s2" onchange="createMatrix()">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select> <br />
+<hr />
+
+</body>
+
+</html>

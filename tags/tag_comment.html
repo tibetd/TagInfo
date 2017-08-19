@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The comment tag is used to insert comments in the source code. Comments 
+			are not displayed in the browsers.</p>
+			<p>You can use comments to explain your code, which can help you when 
+			you edit the source code at a later date. This is especially useful 
+			if you have a lot of code.</p>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;!--...--&gt;</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>NONE.</p>
+		</div>
+		<h3>Tips and Notes</h3>
+		<div>
+			<p>You can also use the comment tag to "hide" scripts from browsers 
+			without support for scripts (so they don't show them as plain text):</p>
+			<div class="w3-code w3-border notranslate">
+				<div>
+&lt;script type="text/javascript"&gt; <br/>&lt;!-- <br/>function displayMsg() { <br/>&nbsp;&nbsp;&nbsp; 
+					alert("Hello World!") <br/>} <br/>//--&gt; <br/>&lt;/script&gt;&nbsp;
+				</div>
+			</div>
+			<p><b>Note:</b> The two forward slashes at the end of comment line (//) 
+			is the JavaScript comment symbol. This prevents JavaScript from executing 
+			the --&gt; tag.</p>
+		</div>
+		<h3>Standard Attributes</h3>
+		<div>
+			<p>The comment tag does not support any standard attributes.</p>
+			<p>More information about <a href="ref_standardattributes.asp">Standard 
+			Attributes</a>.</p>
+		</div>
+		<h3>Event Attributes</h3>
+		<div>
+			<p>The comment tag does not support any event attributes.</p>
+			<p>More information about <a href="ref_eventattributes.asp">Event Attributes</a>.</p>
+		</div>
+	</div></div>
+	<!-- Example goes here -->
+	<div class="w3-example" style="float:right">
+<h3>Example</h3>
+<p>An HTML comment:</p>
+<div class="w3-code notranslate htmlHigh">
+<span class="highCOM">&lt;!--This is a comment. Comments are not displayed in the browser--&gt;</span> <br/> <br/>
+<span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>This is a paragraph.<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span>
+</div>
+<a target="_blank" href="tryit.asp?filename=tryhtml_comment" class="w3-btn w3-margin-bottom">Try it yourself »</a>
+</div>
+	<!-- Result goes here -->
+
+</body>
+
+</html>

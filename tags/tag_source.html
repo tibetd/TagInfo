@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The &lt;source&gt; tag is used to specify multiple media resources 
+			for media elements, such as &lt;video&gt; and &lt;audio&gt;.</p>
+			<p>The &lt;source&gt; tag allows you to specify alternative video/audio 
+			files which the browser may choose from, based on its media type or 
+			codec support.</p>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<p>The numbers in the table specify the first browser version that fully 
+			supports the element.</p>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;source&gt;</td>
+					<td>4.0</td>
+					<td>12.0</td>
+					<td>9.0</td>
+					<td>3.5</td>
+					<td>4.0</td>
+					<td>10.5</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>The &lt;source&gt; tag is new in HTML5.</p>
+		</div>
+		<h3>Tips and Notes</h3>
+		<div>
+		</div>
+		<h3>Attributes</h3>
+		<div>
+			<p class="html5badge" style="background-position: left; padding-left: 20px; height: 18px;">
+			= New in HTML5.</p>
+			<table class="w3-table-all notranslate">
+				<tr>
+					<th style="width: 20%">Attribute</th>
+					<th style="width: 20%">Value</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_source_media.asp">media</a></td>
+					<td><i>media_query</i></td>
+					<td>Specifies the type of media resource</td>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_source_src.asp">src</a></td>
+					<td><i>URL</i></td>
+					<td>Specifies the URL of the media file</td>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_source_type.asp">type</a></td>
+					<td><em>media_type</em></td>
+					<td>Specifies the media type of the media resource</td>
+				</tr>
+			</table>		<h3>Global Attributes</h3>
+		<div>
+			<p>The &lt;source&gt; tag also supports the
+			<a href="ref_standardattributes.asp">Global Attributes in HTML</a>.</p>
+		</div>
+		<h3>Event Attributes</h3>
+		<div>
+			<p>The &lt;source&gt; tag also supports the
+			<a href="ref_eventattributes.asp">Event Attributes in HTML</a>.</p>
+		</div>
+
+		</div>
+		<h3>Related Pages</h3>
+		<div>
+			<p>HTML tutorial: <a href="/html/html5_video.asp">HTML5 Video</a></p>
+			<p>HTML tutorial: <a href="/html/html5_audio.asp">HTML5 Audio</a></p>
+			<p>HTML DOM reference: <a href="/jsref/dom_obj_source.asp">Source Object</a></p>
+		</div>
+		<h3>Default CSS Settings</h3>
+		<div>
+			<p>None.</p>
+		</div>
+	</div>
+</div>
+<!-- Example goes here -->
+<div class="w3-example" style="float: right">
+	<h3>Example</h3>
+	<p>An audio player with two source files. The browser should choose which file 
+	(if any) it has support for:</p>
+	<div class="w3-code notranslate htmlHigh">
+		<span class="highLT">&lt;</span><span class="highELE">audio</span>
+		<span class="highATT">controls</span><span class="highGT">&gt;</span>
+		<br />
+&nbsp; <span class="highLT">&lt;</span><span class="highELE">source</span>
+		<span class="highATT">src=</span><span class="highVAL">"horse.ogg"</span>
+		<span class="highATT">type=</span><span class="highVAL">"audio/ogg"</span><span class="highGT">&gt;</span>
+		<br />
+&nbsp; <span class="highLT">&lt;</span><span class="highELE">source</span>
+		<span class="highATT">src=</span><span class="highVAL">"horse.mp3"</span>
+		<span class="highATT">type=</span><span class="highVAL">"audio/mpeg"</span><span class="highGT">&gt;</span>
+		<br />
+&nbsp; Your browser does not support the audio element. <br />
+		<span class="highLT">&lt;</span><span class="highELE">/audio</span><span class="highGT">&gt;</span>
+	</div>
+	<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_source_src" target="_blank">
+	Try it yourself »</a> </div>
+<!-- Result goes here --></body-->
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The &lt;title&gt; tag is required in all HTML documents and it defines 
+			the title of the document.</p>
+			<p>The &lt;title&gt; element:</p>
+			<ul>
+				<li>defines a title in the browser toolbar</li>
+				<li>provides a title for the page when it is added to favorites</li>
+				<li>displays a title for the page in search-engine results</li>
+			</ul>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;title&gt;</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>NONE.</p>
+		</div>
+		<h3>Tips and Notes</h3>
+		<div>
+			<p><b>Note:</b> You can NOT have more than one &lt;title&gt; element 
+			in an HTML document.</p>
+			<p><b>Tip:</b> If you omit the &lt;title&gt; tag, the document will 
+			not validate as HTML.</p>
+		</div>
+		<h3>Global Attributes</h3>
+		<div>
+			<p>The &lt;title&gt; tag also supports the
+			<a href="ref_standardattributes.asp">Global Attributes in HTML</a>.</p>
+		</div>
+		<h3>Event Attributes</h3>
+		<div>
+		</div>
+		<h3>Related Pages</h3>
+		<div>
+			<p>HTML tutorial: <a href="/html/html_head.asp">HTML Head</a></p>
+			<p>HTML DOM reference: <a href="/jsref/dom_obj_title.asp">Title Object</a></p>
+		</div>
+		<h3>Default CSS Settings</h3>
+		<div>
+			<p>Most browsers will display the &lt;title&gt; element with the following 
+			default values: </p>
+			<div class="w3-example">
+				<div class="w3-code notranslate cssHigh">
+					<span class="highELE">title </span>{ <br />
+&nbsp;&nbsp;&nbsp; <span class="highATT">display:</span><span class="highVAL"> none;</span>
+					<br />
+					} </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Example goes here -->
+<div class="w3-example" style="float: right">
+	<h3>Example</h3>
+	<p>Define a title for your HTML document:</p>
+	<div class="w3-code notranslate htmlHigh">
+		<span class="highLT">&lt;</span><span class="highELE">html</span><span class="highGT">&gt;</span>
+		<br />
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span>
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">title</span><span class="highGT">&gt;</span>HTML 
+		Reference<span class="highLT">&lt;</span><span class="highELE">/title</span><span class="highGT">&gt;</span>
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span>
+		<br />
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span>
+		<br />
+		The content of the document...... <br />
+		<span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span>
+		<br />
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">/html</span><span class="highGT">&gt;</span>
+	</div>
+	<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_basic" target="_blank">
+	Try it yourself »</a> </div>
+<!-- Result goes here -->
+
+</body>
+
+</html>

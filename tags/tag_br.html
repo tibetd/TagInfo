@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The &lt;br&gt; tag inserts a single line break.&nbsp;</p>
+			<p>The &lt;br&gt; tag is an empty tag which means that it has no end 
+			tag.</p>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;br&gt;</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>NONE.</p>
+		</div>
+		<h3>Tips and Notes</h3>
+		<div>
+			<p><b>Tip:</b> The &lt;br&gt; tag is useful for writing addresses or 
+			poems.</p>
+			<p><b>Note:</b> Use the &lt;br&gt; tag to enter line breaks, not to 
+			separate paragraphs.</p>
+		</div>
+		<h3>Differences Between HTML and XHTML</h3>
+		<div>
+			<p>In HTML, the &lt;br&gt; tag has no end tag. </p>
+			<p>In XHTML, the &lt;br&gt; tag must be properly closed, like this: &lt;br 
+			/&gt;. </p>
+		</div>
+		<h3>Global Attributes</h3>
+		<div>
+			<p>The &lt;br&gt; tag also supports the
+			<a href="ref_standardattributes.asp">Global Attributes in HTML</a>.</p>
+		</div>
+		<h3>Event Attributes</h3>
+		<div>
+			<p>The &lt;br&gt; tag also supports the
+			<a href="ref_eventattributes.asp">Event Attributes in HTML</a>.</p>
+		</div>
+		<h3>Related Pages</h3>
+		<div>
+			<p>HTML tutorial: <a href="/html/html_paragraphs.asp">HTML Paragraphs</a></p>
+			<p>HTML DOM reference: <a href="/jsref/dom_obj_br.asp">BR Object</a></p>
+		</div>
+		<h3>Default CSS Settings</h3>
+		<div>
+			<p>None.</p>
+		</div>
+	</div>
+</div>
+<!-- Example goes here -->
+<div class="w3-example" style="float: right">
+	<h3>Example</h3>
+	<p>A line break is marked up as follows:</p>
+	<div class="w3-code notranslate htmlHigh">
+		This text contains<span class="highLT">&lt;</span><span class="highELE">br</span><span class="highGT">&gt;</span>a 
+		line break. </div>
+	<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_br" target="_blank">
+	Try it yourself »</a> </div>
+<!-- Result goes here -->
+
+</body>
+
+</html>

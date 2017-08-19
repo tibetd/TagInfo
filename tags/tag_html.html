@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The &lt;html&gt; tag tells the browser that this is an HTML document.</p>
+			<p>The &lt;html&gt; tag represents the root of an HTML document.</p>
+			<p>The &lt;html&gt; tag is the container for all other HTML elements 
+			(except for the <a href="tag_doctype.asp">&lt;!DOCTYPE&gt;</a> tag).</p>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;html&gt;</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>HTML5 has added a new attribute: manifest.</p>
+		</div>
+		<h3>Differences Between HTML and XHTML</h3>
+		<div>
+			<p>The xmlns attribute is required in XHTML, but is invalid in HTML.</p>
+			<p>However, the HTML validator at
+			<a href="http://w3.org" target="_blank">http://w3.org</a> does not complain 
+			when the xmlns attribute is missing in an XHTML document. This is because 
+			the namespace "xmlns=http://www.w3.org/1999/xhtml" is default, and will 
+			be added to the &lt;html&gt; tag even if you do not include it.</p>
+		</div>
+		<h3>Attributes</h3>
+		<div>
+			<p class="html5badge" style="background-position: left; padding-left: 20px; height: 18px;">
+			= New in HTML5.</p>
+			<table id="table1" class="w3-table-all notranslate">
+				<tr>
+					<th style="width: 20%">Attribute</th>
+					<th style="width: 35%">Value</th>
+					<th style="width: 45%">Description</th>
+				</tr>
+				<tr>
+					<td class="html5badge"><a href="att_html_manifest.asp">manifest</a></td>
+					<td><i>URL</i></td>
+					<td>Specifies the address of the document's cache manifest (for 
+					offline browsing)</td>
+				</tr>
+				<tr>
+					<td><a href="att_html_xmlns.asp">xmlns</a></td>
+					<td>http://www.w3.org/1999/xhtml</td>
+					<td>Specifies the XML namespace attribute (If you need your 
+					content to conform to XHTML)</td>
+				</tr>
+			</table>		<h3>Global Attributes</h3>
+		<div>
+			<p>The &lt;html&gt; tag also supports the
+			<a href="ref_standardattributes.asp">Global Attributes in HTML</a>.</p>
+		</div>
+
+		</div>
+		<h3>Related Pages</h3>
+		<div>
+			<p>HTML tutorial: <a href="/html/html_intro.asp">HTML Introduction</a></p>
+			<p>HTML DOM reference: <a href="/jsref/dom_obj_html.asp">HTML Object</a></p>
+		</div>
+		<h3>Default CSS Settings</h3>
+		<div>
+			<p>Most browsers will display the &lt;html&gt; element with the following 
+			default values: </p>
+			<div class="w3-example">
+				<div class="w3-code notranslate cssHigh">
+					<span class="highELE">html </span>{  <br/>&nbsp;&nbsp;&nbsp;
+					<span class="highATT">display:</span><span class="highVAL"> 
+					block;</span> <br/>} <br/> <br/><span class="highELE">html:focus
+					</span>{  <br/>&nbsp;&nbsp;&nbsp; <span class="highATT">outline:</span><span class="highVAL"> 
+					none;</span> <br/>} </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Example goes here -->
+<div class="w3-example" style="float:right">
+	<h3>Example</h3>
+	<p>A simple HTML5 document:</p>
+	<div class="w3-code notranslate htmlHigh">
+		<span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span>
+		<span class="highATT">HTML</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">html</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">title</span><span class="highGT">&gt;</span>Title 
+		of the document<span class="highLT">&lt;</span><span class="highELE">/title</span><span class="highGT">&gt;</span> <br/>
+		<span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span> <br/>
+		 <br/><span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span> <br/>
+		The content of the document...... <br/><span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span> <br/>
+		 <br/><span class="highLT">&lt;</span><span class="highELE">/html</span><span class="highGT">&gt;</span>
+	</div>
+	<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_basic" target="_blank">
+	Try it yourself »</a> </div>
+<!-- Result goes here -->
+
+</body>
+
+</html>

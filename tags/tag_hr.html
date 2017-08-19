@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Example</title>
+<link href="../css/w3.css" rel="stylesheet" type="text/css" />
+<link href="../css/browserref.css" rel="stylesheet" type="text/css" />
+<link href="../css/stdtheme.css" rel="stylesheet" type="text/css" />
+<link href="../css/nnb.css" rel="stylesheet" type="text/css" />
+<!-- jquery-ui-1.11.4.custom -->
+<link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script src="../jquery/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+</script>
+</head>
+
+<body>
+
+<!-- Accordion -->
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion" class="accordion">
+		<h3>Definition and Usage</h3>
+		<div>
+			<p>The &lt;hr&gt; tag defines a thematic break in an HTML page (e.g. 
+			a shift of topic).</p>
+			<p>The &lt;hr&gt; element is used to separate content (or define a change) 
+			in an HTML page.</p>
+		</div>
+		<h3>Browser Support</h3>
+		<div>
+			<table class="browserref notranslate">
+				<tr>
+					<th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+					<th class="bsChrome" style="width: 13%;" title="Chrome">
+					</th>
+					<th class="bsEdge" style="width: 14%;" title="Edge"></th>
+					<th class="bsIE" style="width: 14%;" title="Internet Explorer">
+					</th>
+					<th class="bsFirefox" style="width: 13%;" title="Firefox">
+					</th>
+					<th class="bsSafari" style="width: 13%;" title="Safari">
+					</th>
+					<th class="bsOpera" style="width: 13%;" title="Opera"></th>
+				</tr>
+				<tr>
+					<td style="text-align: left;">&lt;hr&gt;</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+				</tr>
+			</table>
+		</div>
+		<h3>Differences Between HTML 4.01 and HTML5</h3>
+		<div>
+			<p>In HTML5, the &lt;hr&gt; tag defines a thematic break.</p>
+			<p>In HTML 4.01, the &lt;hr&gt; tag represents a horizontal rule.</p>
+			<p>However, the &lt;hr&gt; tag may still be displayed as a horizontal 
+			rule in visual browsers, but is now defined in semantic terms, rather 
+			than presentational terms.</p>
+			<p>All the layout attributes are removed in HTML5. Use CSS instead.</p>
+		</div>
+		<h3>Differences Between HTML and XHTML</h3>
+		<div>
+			<p>In HTML, the &lt;hr&gt; tag has no end tag.</p>
+			<p>In XHTML, the &lt;hr&gt; tag must be properly closed, like this: &lt;hr 
+			/&gt;. </p>
+		</div>
+		<h3>Attributes</h3>
+		<div>
+			<table class="w3-table-all notranslate">
+				<tr>
+					<th style="width: 20%">Attribute</th>
+					<th style="width: 20%">Value</th>
+					<th style="width: 60%">Description</th>
+				</tr>
+				<tr>
+					<td><a href="att_hr_align.asp">align</a></td>
+					<td>left <br />
+					center <br />
+					right</td>
+					<td><span class="deprecated">Not supported in HTML5.</span>
+					<br />
+					Specifies the alignment of a &lt;hr&gt; element</td>
+				</tr>
+				<tr>
+					<td><a href="att_hr_noshade.asp">noshade</a></td>
+					<td>noshade</td>
+					<td><span class="deprecated">Not supported in HTML5.</span>
+					<br />
+					Specifies that a &lt;hr&gt; element should render in one solid 
+					color (noshaded), instead of a shaded color</td>
+				</tr>
+				<tr>
+					<td><a href="att_hr_size.asp">size</a></td>
+					<td><i>pixels</i></td>
+					<td><span class="deprecated">Not supported in HTML5.</span>
+					<br />
+					Specifies the height of a &lt;hr&gt; element</td>
+				</tr>
+				<tr>
+					<td><a href="att_hr_width.asp">width</a></td>
+					<td><i>pixels <br />
+					%</i></td>
+					<td><span class="deprecated">Not supported in HTML5.</span>
+					<br />
+					Specifies the width of a &lt;hr&gt; element</td>
+				</tr>
+			</table>		<h3>Global Attributes</h3>
+		<div>
+			<p>The &lt;hr&gt; tag also supports the
+			<a href="ref_standardattributes.asp">Global Attributes in HTML</a>.</p>
+		</div>
+		<h3>Event Attributes</h3>
+		<div>
+			<p>The &lt;hr&gt; tag also supports the
+			<a href="ref_eventattributes.asp">Event Attributes in HTML</a>.</p>
+		</div>
+
+		</div>
+		<h3>Related Pages</h3>
+		<div>
+			<p>HTML DOM reference: <a href="/jsref/dom_obj_hr.asp">HR Object</a></p>
+		</div>
+		<h3>Default CSS Settings</h3>
+		<div>
+			<p>Most browsers will display the &lt;hr&gt; element with the following 
+			default values: </p>
+			<div class="w3-example">
+				<h3>Example</h3>
+				<div class="w3-code notranslate cssHigh">
+					<span class="highELE">hr </span>{ <br />
+&nbsp; &nbsp; <span class="highATT">display:</span><span class="highVAL"> block;</span>
+					<br />
+&nbsp;&nbsp;&nbsp; <span class="highATT">margin-top:</span><span class="highVAL"> 
+					0.5em;</span> <br />
+&nbsp; &nbsp; <span class="highATT">margin-bottom:</span><span class="highVAL"> 
+					0.5em;</span> <br />
+&nbsp;&nbsp;&nbsp; <span class="highATT">margin-left:</span><span class="highVAL"> 
+					auto;</span> <br />
+&nbsp; &nbsp; <span class="highATT">margin-right:</span><span class="highVAL"> auto;</span>
+					<br />
+&nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span class="highVAL"> 
+					inset;</span> <br />
+&nbsp; &nbsp; <span class="highATT">border-width:</span><span class="highVAL"> 1px;</span>
+					<br />
+					} </div>
+				<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_hr_default_css" target="_blank">
+				Try it yourself »</a> </div>
+		</div>
+	</div>
+</div>
+<!-- Example goes here -->
+<div class="w3-example" style="float: right">
+	<h3>Example</h3>
+	<p>Use the &lt;hr&gt; tag to define a thematic change in the content:</p>
+	<div class="w3-code notranslate htmlHigh">
+		<span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>HTML<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span>
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>HTML 
+		is a language for describing web pages.....<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span>
+		<br />
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">hr</span><span class="highGT">&gt;</span>
+		<br />
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>CSS<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span>
+		<br />
+		<span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>CSS 
+		defines how to display HTML elements.....<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span>
+	</div>
+	<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_hr_test" target="_blank">
+	Try it yourself »</a> </div>
+<!-- Result goes here -->
+
+</body>
+
+</html>
